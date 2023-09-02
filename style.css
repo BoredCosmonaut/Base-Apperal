@@ -1,0 +1,234 @@
+/* This bit is for css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Below is where the style begins */
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(234, 234, 234);
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+    margin: 2% auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+#logo-pc {
+    display: none;
+}
+
+#image-container-mobile {
+    width: 300px;
+    height: 200px;
+}
+
+#image-mobile {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+#image-container-pc {
+    display: none;
+}
+
+#image-container-pc {
+    display: none;
+}
+
+#header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    word-spacing: 200px;
+    letter-spacing: 7px;
+}
+
+#we {
+    color: hsl(0, 93%, 68%);
+}
+
+#middle-text {
+    text-align: center;
+    font-size: 15px;
+    width: 90%;
+    margin: 0 auto;
+    color: hsl(0, 36%, 70%);
+}
+
+#email-input {
+    margin-top: 20px;
+    padding: 10px 45px 10px 10px;
+    border: 0.1px solid gray;
+    border-radius: 50px;
+    margin-left: 30px;
+    font-size: 12px;
+    color: hsl(0, 36%, 70%);
+}
+
+#warning {
+    display: none;
+    position: relative;
+    width: 19px;
+    left: 165px;
+    bottom: 27px;
+}
+
+#arrow {
+    position: relative;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 8px 20px;
+    border-radius: 30px;
+    top: 14px;
+    right: 55px;
+}
+
+#arrow:hover {
+    cursor: pointer;
+    top: 13px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#warning-text {
+    position: relative;
+    display: none;
+    margin-top: 5px;
+    margin-left: 38px;
+    font-size: 10px;
+}
+
+@media(min-width: 400px) {
+
+    #logo {
+        display: none;
+    }
+
+    #logo-pc {
+        display: inline-flex;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+    }
+
+    #card {
+        flex-direction: row-reverse;
+        width: 850px;
+        height: 500px;
+    }
+
+    #image-container-mobile {
+        display: none;
+    }
+
+    #image-container-pc {
+        display: inline-flex;
+        width: 400px;
+        height: 500px;
+    }
+
+    #image-pc {
+        max-width: 400px;
+        max-height: 500px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    #header {
+        margin-left: 30px;
+        text-align: left;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 15px;
+    }
+
+    #middle-text {
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 30px;
+        padding-right: 30px;
+    }
+
+    #email-input {
+        padding: 10px 150px 10px 10px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    #warning {
+        left: 220px;
+    }
+
+    #warning-text {
+        font-size: 12px;
+        color: hsl(0, 93%, 68%);
+    }
+
+    #arrow {
+        right: 75px;
+        padding: 8px 30px;
+    }
+}
